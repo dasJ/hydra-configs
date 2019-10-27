@@ -1,0 +1,15 @@
+{
+  "enabled": 1,
+  "hidden": false,
+  "description": "Automatic Jobset configuration",
+  "nixexprinput": "declInput",
+  "nixexprpath": "default.nix",
+  "checkinterval": 86400,
+  "schedulingshares": 5,
+  "enableemail": false,
+  "emailoverride": "",
+  "keepnr": 3,
+  "inputs": {
+    "project": { "type": "string", "emailresponsible": false, "value": "node-hydra-connector" }
+  }
+}
