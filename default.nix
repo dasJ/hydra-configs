@@ -1,8 +1,9 @@
 { project, ... }: let
 
   # Helper functions
-  hydraLib = { # Weird name to prevent confusion with nixpkgs lib
+  hydraLib = rec { # Weird name to prevent confusion with nixpkgs lib
     mkInput = { type, value, emailresponsible ? false }: { inherit type value emailresponsible; };
+    mkNixosChannel = version: mkInput { type = "git"; value = "https://github.com/nixos/nixpkgs-channels.git nixos-${version}"; };
   };
 
   # Prepare jobsets
