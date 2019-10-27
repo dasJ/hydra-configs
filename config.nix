@@ -12,5 +12,6 @@
     enableemail = false;
     emailoverride = "";
     keepnr = 3;
+    inputs = {};
   };
 }
